@@ -4,26 +4,24 @@ import 'package:recipes_ui/core/widgets/adaptive_offset_effect.dart';
 
 class MouseRegionEffect extends StatefulWidget {
   const MouseRegionEffect({
-    Key? key,
+    super.key,
     required this.width,
     required this.height,
     required this.child,
     this.offsetMultiplier = 1,
     this.childBuilder,
     this.maxMovableDistance = 10,
-  })  : assert(child != null && childBuilder == null),
-        super(key: key);
+  }) : assert(child != null && childBuilder == null);
 
   const MouseRegionEffect.builder({
-    Key? key,
+    super.key,
     required this.width,
     required this.height,
     this.child,
     this.offsetMultiplier = 1,
     required this.childBuilder,
     this.maxMovableDistance = 10,
-  })  : assert(childBuilder != null),
-        super(key: key);
+  }) : assert(childBuilder != null);
 
   final double width;
   final double height;

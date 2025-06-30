@@ -6,8 +6,8 @@ import 'package:recipes_ui/features/recipes/models/recipe.dart';
 class IngredientsSection extends StatelessWidget {
   const IngredientsSection(
     this.recipe, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final Recipe recipe;
 

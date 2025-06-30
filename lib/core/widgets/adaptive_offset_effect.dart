@@ -11,26 +11,24 @@ typedef OffsetEffectBuilder = Widget Function(
 
 class AdaptiveOffsetEffect extends StatelessWidget {
   const AdaptiveOffsetEffect({
-    Key? key,
+    super.key,
     required this.width,
     required this.height,
     required this.child,
     this.offsetMultiplier = 1,
     this.childBuilder,
     this.maxMovableDistance = 10,
-  })  : assert(child != null),
-        super(key: key);
+  }) : assert(child != null);
 
   const AdaptiveOffsetEffect.builder({
-    Key? key,
+    super.key,
     required this.width,
     required this.height,
     this.child,
     this.offsetMultiplier = 1,
     required this.childBuilder,
     this.maxMovableDistance = 10,
-  })  : assert(childBuilder != null),
-        super(key: key);
+  }) : assert(childBuilder != null);
 
   final double width;
   final double height;

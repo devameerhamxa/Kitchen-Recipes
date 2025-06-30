@@ -11,12 +11,12 @@ import 'package:recipes_ui/features/recipes/views/widgets/recipe_page_image_bg.d
 
 class RecipePageSliverAppBar extends StatelessWidget {
   const RecipePageSliverAppBar({
-    Key? key,
+    super.key,
     required this.recipe,
     this.expandedHeight = 340,
     this.collapsedHeight = 200,
     this.imageRotationAngle = 0,
-  }) : super(key: key);
+  });
 
   final Recipe recipe;
   final double expandedHeight;

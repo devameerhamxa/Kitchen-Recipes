@@ -7,7 +7,7 @@ import 'package:recipes_ui/features/recipes/views/widgets/recipe_list_item.dart'
 import 'package:recipes_ui/features/recipes/views/widgets/recipe_list_item_wrapper.dart';
 
 class RecipesPage extends StatefulWidget {
-  const RecipesPage({Key? key}) : super(key: key);
+  const RecipesPage({super.key});
 
   @override
   State<RecipesPage> createState() => _RecipesPageState();

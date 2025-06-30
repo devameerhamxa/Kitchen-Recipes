@@ -3,7 +3,7 @@ import 'package:recipes_ui/playground/animated_scroll_view/animated_scroll_view_
 import 'package:recipes_ui/playground/animated_scroll_view/list_item.dart';
 
 class AnimatedHorizontalListView extends StatelessWidget {
-  const AnimatedHorizontalListView({Key? key}) : super(key: key);
+  const AnimatedHorizontalListView({super.key});
 
   @override
   Widget build(BuildContext context) {
