@@ -6,22 +6,20 @@ import 'package:sensors_plus/sensors_plus.dart';
 
 class GyroscopeEffect extends StatefulWidget {
   const GyroscopeEffect({
-    Key? key,
+    super.key,
     required this.child,
     this.maxMovableDistance = 10,
     this.offsetMultiplier = 1,
     this.childBuilder,
-  })  : assert(child != null && childBuilder == null),
-        super(key: key);
+  }) : assert(child != null && childBuilder == null);
 
   const GyroscopeEffect.builder({
-    Key? key,
+    super.key,
     this.child,
     this.maxMovableDistance = 10,
     this.offsetMultiplier = 1,
     required this.childBuilder,
-  })  : assert(childBuilder != null),
-        super(key: key);
+  }) : assert(childBuilder != null);
 
   /// Moving child widget
   final Widget? child;

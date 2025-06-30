@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:recipes_ui/core/enums/screen_size.dart';
 import 'package:recipes_ui/core/styles/app_colors.dart';
@@ -12,8 +14,8 @@ import 'package:recipes_ui/features/recipes/views/widgets/recipe_list_item_text.
 class RecipeListItem extends StatefulWidget {
   const RecipeListItem(
     this.recipe, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final Recipe recipe;
 
@@ -30,7 +32,8 @@ class _RecipeListItemState extends State<RecipeListItem> {
 
     return RecipeListItemGestureDetector(
       onTap: () {
-        Navigator.of(context).push(
+        Navigator.of(context)
+            .push(
           PageRouteBuilder(
             transitionDuration: const Duration(milliseconds: 300),
             pageBuilder:

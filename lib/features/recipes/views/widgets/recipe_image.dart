@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:recipes_ui/core/styles/app_colors.dart';
 import 'package:recipes_ui/features/recipes/models/recipe.dart';
@@ -5,13 +7,13 @@ import 'package:recipes_ui/features/recipes/models/recipe.dart';
 class RecipeImage extends StatelessWidget {
   const RecipeImage(
     this.recipe, {
-    Key? key,
+    super.key,
     this.imageRotationAngle = 0,
     this.imageSize,
     this.alignment = Alignment.center,
     this.hasShadow = true,
     this.shadowOffset,
-  }) : super(key: key);
+  });
 
   final Recipe recipe;
   final double imageRotationAngle;

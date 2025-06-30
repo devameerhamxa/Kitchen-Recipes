@@ -7,8 +7,8 @@ import 'package:recipes_ui/features/recipes/views/widgets/recipe_list_item_text_
 class RecipeListItemText extends StatelessWidget {
   const RecipeListItemText(
     this.menuItem, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final Recipe menuItem;
 

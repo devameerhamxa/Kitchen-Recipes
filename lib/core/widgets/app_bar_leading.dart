@@ -1,14 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:recipes_ui/core/styles/app_colors.dart';
 
 class AppBarLeading extends StatefulWidget {
   const AppBarLeading({
-    Key? key,
+    super.key,
     this.bgColor = AppColors.white,
     this.text,
     this.popValue,
-  }) : super(key: key);
+  });
 
   final Color bgColor;
   final String? text;

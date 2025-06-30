@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 
 class RecipeListItemImageWrapper extends StatefulWidget {
   const RecipeListItemImageWrapper({
-    Key? key,
+    super.key,
     required this.child,
     this.playOnce = false,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final bool playOnce;

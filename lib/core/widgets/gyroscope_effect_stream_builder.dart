@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
@@ -7,22 +9,20 @@ typedef GyroscopeEffectBuilder = Widget Function(
 
 class GyroscopeEffect extends StatefulWidget {
   const GyroscopeEffect({
-    Key? key,
+    super.key,
     required this.child,
     this.maxMovableDistance = 10,
     this.offsetMultiplier = 1,
     this.childBuilder,
-  })  : assert(child != null),
-        super(key: key);
+  }) : assert(child != null);
 
   const GyroscopeEffect.builder({
-    Key? key,
+    super.key,
     this.child,
     this.maxMovableDistance = 10,
     this.offsetMultiplier = 1,
     required this.childBuilder,
-  })  : assert(childBuilder != null),
-        super(key: key);
+  }) : assert(childBuilder != null);
 
   final Widget? child;
   final double maxMovableDistance;

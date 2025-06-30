@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -8,10 +10,10 @@ import 'package:recipes_ui/features/recipes/models/recipe.dart';
 class RecipeImagePattern extends StatelessWidget {
   const RecipeImagePattern(
     this.recipe, {
-    Key? key,
+    super.key,
     this.offset = Offset.zero,
     required this.borderRadius,
-  }) : super(key: key);
+  });
 
   final Recipe recipe;
   final BorderRadius borderRadius;

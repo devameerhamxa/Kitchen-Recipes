@@ -14,9 +14,9 @@ import 'package:recipes_ui/features/recipes/views/widgets/recipe_page_sliver_app
 class RecipePage extends StatefulWidget {
   const RecipePage(
     this.recipe, {
-    Key? key,
+    super.key,
     this.initialImageRotationAngle = 0,
-  }) : super(key: key);
+  });
 
   final Recipe recipe;
   final double initialImageRotationAngle;

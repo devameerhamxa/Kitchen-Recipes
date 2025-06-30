@@ -10,9 +10,9 @@ import 'package:recipes_ui/features/recipes/views/widgets/recipe_page_image_bg.d
 class RecipePageSidebar extends StatelessWidget {
   const RecipePageSidebar(
     this.recipe, {
-    Key? key,
+    super.key,
     this.imageRotationAngle = 0,
-  }) : super(key: key);
+  });
 
   final Recipe recipe;
   final double imageRotationAngle;

@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:recipes_ui/core/styles/app_colors.dart';
 import 'package:recipes_ui/features/recipes/models/recipe.dart';
@@ -5,9 +7,9 @@ import 'package:recipes_ui/features/recipes/models/recipe.dart';
 class RecipePageImageBg extends StatelessWidget {
   const RecipePageImageBg(
     this.recipe, {
-    Key? key,
+    super.key,
     required this.borderRadius,
-  }) : super(key: key);
+  });
 
   final Recipe recipe;
   final BorderRadius borderRadius;

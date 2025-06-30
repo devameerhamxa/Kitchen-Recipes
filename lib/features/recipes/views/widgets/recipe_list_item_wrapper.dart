@@ -3,11 +3,11 @@ import 'package:flutter/rendering.dart';
 
 class RecipeListItemWrapper extends StatefulWidget {
   const RecipeListItemWrapper({
-    Key? key,
+    super.key,
     required this.child,
     this.keepAlive = false,
     this.scrollDirection = ScrollDirection.forward,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final bool keepAlive;

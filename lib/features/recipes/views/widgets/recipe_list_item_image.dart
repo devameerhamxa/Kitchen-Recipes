@@ -6,9 +6,9 @@ import 'package:recipes_ui/features/recipes/views/widgets/recipe_list_item_image
 class RecipeListItemImage extends StatelessWidget {
   const RecipeListItemImage(
     this.recipe, {
-    Key? key,
+    super.key,
     this.imageRotationAngle = 0,
-  }) : super(key: key);
+  });
 
   final Recipe recipe;
   final double imageRotationAngle;

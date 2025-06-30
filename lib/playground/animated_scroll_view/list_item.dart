@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class ListItem extends StatelessWidget {
   const ListItem({
-    Key? key,
+    super.key,
     this.title = '',
-  }) : super(key: key);
+  });
 
   final String title;
 
